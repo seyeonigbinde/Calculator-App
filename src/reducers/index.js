@@ -1,3 +1,5 @@
+import { ADD_ONE, APPLY_NUMBER, CHANGE_OPERATION, CLEAR_DISPLAY, MEMORY_ACTION_MPLUS, MEMORY_ACTION_APPLY, MEMORY_ACTION_MC} from './../actions';
+
 export const initialState = {
     total: 0,
     operation: "+",
