@@ -1,7 +1,7 @@
 body {
   box-sizing: border-box;
   overflow-x: hidden;
-  background: #574b90;
+  background: #0e101c;
   font-family: 'Lato', sans-serif;
 }
 
@@ -10,7 +10,7 @@ body {
 }
 
 .form-control {
-  border-color: #6c5ce7 !important;
+  border-color: #fff !important;
 }
 
 button,
