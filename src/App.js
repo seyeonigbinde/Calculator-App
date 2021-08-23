@@ -3,7 +3,7 @@ import reducer, { initialState } from './reducers/index';
 import './App.css';
 import TotalDisplay from './components/TotalDisplay';
 import CalcButton from './components/CalcButton';
-import { addOne, applyNumber, changeOperation, clearDisplay, addToMemoryPlus, addToMemoryApply, addToMemoryMC } from './actions/index';
+import { applyNumber, changeOperation, clearDisplay, addToMemoryPlus, addToMemoryApply, addToMemoryMC } from './actions/index';
 
 
 function App() {
@@ -73,12 +73,14 @@ function App() {
             </div>
 
             <div className="row">
+              <CalcButton value={0} onClick= { () =>handleChanges (0)}/>
               <CalcButton value={"+"} onClick= { () =>handleOperator ("+")}/>
-              <CalcButton value={"*"} onClick= { () =>handleOperator ("*")}/>
               <CalcButton value={"-"} onClick= { () =>handleOperator ("-")}/>
             </div>
 
-            <div className="row ce_button">
+            <div className="row">
+              <CalcButton value={"*"} onClick= { () =>handleOperator ("*")}/>
+              <CalcButton value={"/"} onClick= { () =>handleOperator ("/")}/>
               <CalcButton value={"CE"} onClick={handleClear}/>
             </div>
 

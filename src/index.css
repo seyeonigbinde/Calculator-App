@@ -47,14 +47,6 @@ button:active {
   background-color: #8393dd !important;
 }
 
-.ce_button .col-xs-4{
-  width: 100%;
-}
-
-.ce_button .col-xs-4 .btn{
-  width: 100% !important;
-}
-
 .btn-primary:focus,
 .btn-primary,
 .form-control:focus {
